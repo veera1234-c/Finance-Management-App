@@ -6,4 +6,5 @@ class Routes {
   static const String loginScreen = '/login';
   static const String otpScreen = '/veify-otp';
   static const String menuScreen = '/menu';
+  static const String bankaccountScreen = '/bank-acoounts';
 }

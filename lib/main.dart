@@ -1,3 +1,4 @@
+import 'package:finance_management_app/screens/bankaccounts.dart';
 import 'package:finance_management_app/screens/menupage.dart';
 import 'package:finance_management_app/screens/otpscreen.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         Routes.loginScreen: (context) => loginpage(),
         Routes.otpScreen: (context) => OtpScreen(),
         Routes.menuScreen: (context) => Menu(),
+        Routes.bankaccountScreen: (context) => BankAccounts(),
       },
     );
   }
