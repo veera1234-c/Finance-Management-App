@@ -1,5 +1,6 @@
 import 'dart:html';
 
+import 'package:finance_management_app/screens/otpscreen.dart';
 import 'package:flutter/material.dart';
 import 'screens/loginpage.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: loginpage(),
+      home: OtpScreen(),
     );
   }
 }
