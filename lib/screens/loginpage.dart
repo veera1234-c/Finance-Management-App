@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../constants/colors.dart';
+import '../constants/routes.dart';
 
 class loginpage extends StatefulWidget {
   const loginpage({super.key});
@@ -134,8 +135,7 @@ class _loginpageState extends State<loginpage> {
                 if (PhoneNumberTextController.text.isNotEmpty) {
                   print(
                       "Your phone number is ${PhoneNumberTextController.text}");
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => OtpScreen())));
+                  Navigator.pushNamed(context, Routes.otpScreen);
                 }
               },
             ),

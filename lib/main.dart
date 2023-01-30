@@ -1,7 +1,7 @@
-import 'dart:html';
-
+import 'package:finance_management_app/screens/menupage.dart';
 import 'package:finance_management_app/screens/otpscreen.dart';
 import 'package:flutter/material.dart';
+import 'constants/routes.dart';
 import 'screens/loginpage.dart';
 
 void main() {
@@ -14,7 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: OtpScreen(),
+      // home: OtpScreen(),
+      initialRoute: Routes.loginScreen,
+      routes: {
+        Routes.loginScreen: (context) => loginpage(),
+        Routes.otpScreen: (context) => OtpScreen(),
+        Routes.menuScreen: (context) => Menu(),
+      },
     );
   }
 }

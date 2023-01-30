@@ -1,15 +1,15 @@
 import 'package:finance_management_app/constants/colors.dart';
+import 'package:finance_management_app/screens/menupage.dart';
 import 'package:flutter/material.dart';
-import 'package:otp_text_field/otp_field.dart';
-import 'package:otp_text_field/otp_field_style.dart';
-import 'package:otp_text_field/style.dart';
+import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+
+import '../constants/routes.dart';
 
 class OtpScreen extends StatelessWidget {
   const OtpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    OtpFieldController otpController = OtpFieldController();
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
@@ -27,26 +27,19 @@ class OtpScreen extends StatelessWidget {
                 ),
               ),
               Image.asset("otplogo.png"),
-              OTPTextField(
-                controller: otpController,
-                onChanged: (pin) {
-                  print("Changed: " + pin);
-                },
-                length: 5,
-                // onChanged: (value) => print(value),
-                width: MediaQuery.of(context).size.width,
-                fieldWidth: 80,
-                style: TextStyle(fontSize: 17),
-                otpFieldStyle: OtpFieldStyle(
-                    backgroundColor: Colors.blue, borderColor: Colors.green),
-                textFieldAlignment: MainAxisAlignment.spaceAround,
-                fieldStyle: FieldStyle.underline,
-                onCompleted: (pin) {
-                  print("Completed: " + pin);
-                  // Navigator.pushNamed(
-                  //   context,
-                  //   Routes.signUpScreen,
-                  // );
+              OtpTextField(
+                mainAxisAlignment: MainAxisAlignment.center,
+                numberOfFields: 6,
+                // focusedBorderColor: MyColors.ThemeColor,
+                // borderWidth: 5,
+                borderRadius: BorderRadius.circular(30),
+                fillColor: Colors.black.withOpacity(0.1),
+                filled: true,
+                fieldWidth: 60,
+                onCodeChanged: (value) => print("Changed : " + value),
+                onSubmit: (value) {
+                  print("The OTP code is " + value);
+                  Navigator.pushNamed(context, Routes.menuScreen);
                 },
               ),
               SizedBox(
