@@ -48,6 +48,7 @@ class _loginpageState extends State<loginpage> {
                             style: TextStyle(
                                 fontFamily: 'Inter',
                                 fontSize: 30,
+                                fontWeight: FontWeight.w900,
                                 color: Color(0xFF877ECC)),
                           ),
                         ),

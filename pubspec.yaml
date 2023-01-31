@@ -81,7 +81,7 @@ flutter:
     - family: Inter
       fonts:
         - asset: fonts/Inter-Black.ttf
-        # - asset: fonts/Inter-Bold.ttf
+        - asset: fonts/Inter-Bold.ttf
         # - asset: fonts/Inter-Thin.ttf
         # - asset: fonts/Inter-Medium.ttf
     - family: Cairo
