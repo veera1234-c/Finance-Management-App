@@ -46,7 +46,7 @@ class _loginpageState extends State<loginpage> {
                           child: Text(
                             "LOGIN",
                             style: TextStyle(
-                                fontFamily: "Inter-Black",
+                                fontFamily: 'Inter',
                                 fontSize: 30,
                                 color: Color(0xFF877ECC)),
                           ),
@@ -115,7 +115,7 @@ class _loginpageState extends State<loginpage> {
               child: Text(
                 "GET OTP",
                 style: TextStyle(
-                    fontFamily: "Inter-Bold",
+                    fontFamily: 'Inter-Bold',
                     fontSize: 18,
                     color: Colors.black),
               ),
