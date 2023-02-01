@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../constants/colors.dart';
+
 class ImageTopUI extends StatelessWidget {
   ImageTopUI({
     this.imagePath,
@@ -22,7 +24,7 @@ class ImageTopUI extends StatelessWidget {
                 offset: Offset(4, 4),
                 blurRadius: 100,
                 spreadRadius: 50,
-                color: Colors.deepPurple.shade900)
+                color: MyColors.ThemeColor)
           ]),
     );
   }

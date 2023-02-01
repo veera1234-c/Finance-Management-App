@@ -1,3 +1,4 @@
+import 'package:finance_management_app/constants/colors.dart';
 import 'package:flutter/material.dart';
 import '../../constants/routes.dart';
 import 'Widgets_For_onboardings/buttons.dart';
@@ -11,7 +12,7 @@ class OnBoarding2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      backgroundColor: Colors.deepPurple[600],
+      backgroundColor: MyColors.ThemeColor,
       body: Stack(children: [
         ImageTopUI(imagePath: 'assets/payment-reminder.png'),
         TextBottomUI(
