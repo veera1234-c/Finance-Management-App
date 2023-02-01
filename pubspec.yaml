@@ -87,6 +87,9 @@ flutter:
     - family: Cairo
       fonts:
         - asset: fonts/Cairo-Bold.ttf
+    - family: OnBoardingFont
+      fonts:
+        - asset: fonts/Exo2-VariableFont_wght.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
