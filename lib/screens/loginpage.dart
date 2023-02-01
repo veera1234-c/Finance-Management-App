@@ -44,10 +44,10 @@ class _loginpageState extends State<loginpage> {
                       children: [
                         Container(
                           child: Text(
-                            "LOGIN",
+                            "LOG IN",
                             style: TextStyle(
                                 fontFamily: 'Inter',
-                                fontSize: 30,
+                                fontSize: 35,
                                 fontWeight: FontWeight.w900,
                                 color: Color(0xFF877ECC)),
                           ),
@@ -94,7 +94,7 @@ class _loginpageState extends State<loginpage> {
               child: ElevatedButton(
                 child: Text("SIGN UP",
                     style: TextStyle(
-                        fontFamily: "Inter-Bold",
+                        fontFamily: "Inter",
                         fontSize: 18,
                         color: Color(0xFF6057A6))),
                 style: ElevatedButton.styleFrom(
@@ -116,9 +116,7 @@ class _loginpageState extends State<loginpage> {
               child: Text(
                 "GET OTP",
                 style: TextStyle(
-                    fontFamily: 'Inter-Bold',
-                    fontSize: 18,
-                    color: Colors.black),
+                    fontFamily: 'Inter', fontSize: 18, color: Colors.black),
               ),
               style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFFD9D9D9),

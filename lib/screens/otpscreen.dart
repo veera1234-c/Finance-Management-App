@@ -47,8 +47,7 @@ class OtpScreen extends StatelessWidget {
               ),
               Text(
                 "PLEASE ENTER THE OTP",
-                style: TextStyle(
-                    fontFamily: "Inter-Thin", color: Color(0xFF6057A6)),
+                style: TextStyle(fontFamily: "Inter", color: Color(0xFF6057A6)),
               ),
               Stack(
                 children: [
@@ -68,7 +67,7 @@ class OtpScreen extends StatelessWidget {
                       child: Text(
                         "DIDN’T GET? | RESEND OTP",
                         style: TextStyle(
-                          fontFamily: "Inter-Medium",
+                          fontFamily: "Inter",
                           fontSize: 10,
                           color: Colors.white,
                         ),

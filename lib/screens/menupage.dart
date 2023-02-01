@@ -26,7 +26,7 @@ class _MenuState extends State<Menu> {
                 child: Text(
                   "MENU",
                   style: TextStyle(
-                    fontFamily: "Cairo-ExtraBlack",
+                    fontFamily: "Cairo",
                     color: Colors.white,
                     fontSize: 34,
                   ),
@@ -49,7 +49,7 @@ class _MenuState extends State<Menu> {
                 child: Text(
                   "YOUR MONTHLY EXPENSE: 10,999 ",
                   style: TextStyle(
-                      fontFamily: "Cairo-SemiBold",
+                      fontFamily: "Semibold",
                       color: Color(0xFF2411B8),
                       fontSize: 20),
                 ),
