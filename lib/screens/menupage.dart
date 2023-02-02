@@ -85,13 +85,13 @@ class _MenuState extends State<Menu> {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, Routes.bankaccountScreen);
+                    Navigator.pushNamed(context, Routes.RemainderScreen);
                   },
                   child: Image.asset("remainders.png", height: 146, width: 149),
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, Routes.bankaccountScreen);
+                    Navigator.pushNamed(context, Routes.Expenses_Screen);
                   },
                   child:
                       Image.asset("transactions.png", height: 146, width: 149),

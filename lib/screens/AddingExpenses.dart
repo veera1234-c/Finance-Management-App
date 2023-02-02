@@ -3,15 +3,19 @@ import '../constants/Appbarwidgets.dart';
 import '../constants/routes.dart';
 import '../constants/textwidget_forhelpscreen.dart';
 
-class BankAccounts extends StatelessWidget {
-  const BankAccounts({super.key});
+class CategoryScreen extends StatelessWidget {
+  const CategoryScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     var categoryname = [
-      'HDFC',
-      'SBI',
-      'ICICI',
+      'OTHERS',
+      'SHOPPING',
+      'DINNING',
+      'TRAVELLING',
+      'GROCERIES',
+      'ACADEMICS',
+      'BILLS',
     ];
     return SafeArea(
       child: Scaffold(
@@ -19,7 +23,7 @@ class BankAccounts extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: 80,
           centerTitle: true,
-          title: TextAppBar('BANK ACCOUNT'),
+          title: TextAppBar('CATEGORY'),
           backgroundColor: Colors.deepPurple,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(
@@ -34,21 +38,6 @@ class BankAccounts extends StatelessWidget {
             SizedBox(
               height: MediaQuery.of(context).size.height / 3.2,
             ),
-            Align(
-                alignment: Alignment.bottomLeft,
-                child: Padding(
-                    padding: EdgeInsets.only(left: 10, bottom: 10),
-                    child: FloatingActionButton(
-                      onPressed: () {
-                        Navigator.pushNamed(
-                            context, Routes.AddingAccountScreen);
-                      },
-                      child: CircleAvatar(
-                        child: Icon(Icons.add),
-                        backgroundColor: Colors.deepPurpleAccent,
-                        radius: 30,
-                      ),
-                    ))),
             Flexible(
               child: ListView.separated(
                   scrollDirection: Axis.vertical,
@@ -59,7 +48,9 @@ class BankAccounts extends StatelessWidget {
                           backgroundColor:
                               MaterialStatePropertyAll(Colors.white),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, Routes.helpScreen);
+                        },
                         child: Card(
                           child: Center(child: TextList(categoryname[index])),
                           elevation: 5,

@@ -4,10 +4,14 @@ import 'package:finance_management_app/screens/menupage.dart';
 import 'package:finance_management_app/screens/otpscreen.dart';
 import 'package:flutter/material.dart';
 import 'constants/routes.dart';
+import 'screens/AddingAccounts.dart';
+import 'screens/AddingExpenses.dart';
 import 'screens/HelpScreen.dart';
 import 'screens/OnboardingScreens/Onboarding2.dart';
 import 'screens/OnboardingScreens/Onboarding3.dart';
 import 'screens/ProfileScreen.dart';
+import 'screens/RemainderScreen.dart';
+import 'screens/expensesScreen.dart';
 import 'screens/loginpage.dart';
 import 'screens/splashscreen.dart';
 
@@ -32,6 +36,10 @@ class MyApp extends StatelessWidget {
         Routes.otpScreen: (context) => OtpScreen(),
         Routes.menuScreen: (context) => Menu(),
         Routes.bankaccountScreen: (context) => BankAccounts(),
+        Routes.AddingAccountScreen: (context) => AccountScreen(),
+        Routes.RemainderScreen: (context) => ReminderScreen(),
+        Routes.Expenses_Screen: (context) => ExpensesScreen(),
+        Routes.Addingexpenses: (context) => CategoryScreen(),
         Routes.profilepageScreen: (context) => ProfileScreen(),
         Routes.helpScreen: (context) => HelpScreen(),
       },

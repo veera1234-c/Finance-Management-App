@@ -1,25 +1,21 @@
 import 'package:flutter/material.dart';
 import '../constants/Appbarwidgets.dart';
 import '../constants/routes.dart';
-import '../constants/textwidget_forhelpscreen.dart';
 
-class BankAccounts extends StatelessWidget {
-  const BankAccounts({super.key});
+class ExpensesScreen extends StatelessWidget {
+  const ExpensesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var categoryname = [
-      'HDFC',
-      'SBI',
-      'ICICI',
-    ];
+    var transaction = ['Paneer', 'Souvenier', 'Sugar', 'Flipkart'];
+    var amount = [45, 322, 8754, 78, 4500];
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
           toolbarHeight: 80,
           centerTitle: true,
-          title: TextAppBar('BANK ACCOUNT'),
+          title: TextAppBar('EXPENSES'),
           backgroundColor: Colors.deepPurple,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(
@@ -40,8 +36,7 @@ class BankAccounts extends StatelessWidget {
                     padding: EdgeInsets.only(left: 10, bottom: 10),
                     child: FloatingActionButton(
                       onPressed: () {
-                        Navigator.pushNamed(
-                            context, Routes.AddingAccountScreen);
+                        Navigator.pushNamed(context, Routes.Addingexpenses);
                       },
                       child: CircleAvatar(
                         child: Icon(Icons.add),
@@ -61,7 +56,35 @@ class BankAccounts extends StatelessWidget {
                         ),
                         onPressed: () {},
                         child: Card(
-                          child: Center(child: TextList(categoryname[index])),
+                          child: Center(
+                              child: ListTile(
+                            title: Text(
+                              transaction[index],
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 20,
+                                  letterSpacing: 2),
+                            ),
+                            subtitle: Text(
+                              'Amount: ${amount[index]} rs ',
+                              style: TextStyle(
+                                  color: Colors.amber,
+                                  fontWeight: FontWeight.w300,
+                                  fontSize: 16),
+                            ),
+                            leading: Text(
+                              '${index + 1}',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 16),
+                            ),
+                            trailing: Icon(
+                              Icons.delete_forever,
+                              color: Colors.white,
+                            ),
+                          )),
                           elevation: 5,
                           color: Colors.deepPurpleAccent,
                           shape: RoundedRectangleBorder(
@@ -74,7 +97,7 @@ class BankAccounts extends StatelessWidget {
                       thickness: 5,
                     );
                   },
-                  itemCount: categoryname.length),
+                  itemCount: transaction.length),
             ),
           ],
         ),

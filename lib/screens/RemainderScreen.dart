@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
 import '../constants/Appbarwidgets.dart';
-import '../constants/routes.dart';
 import '../constants/textwidget_forhelpscreen.dart';
 
-class BankAccounts extends StatelessWidget {
-  const BankAccounts({super.key});
+class ReminderScreen extends StatelessWidget {
+  const ReminderScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     var categoryname = [
-      'HDFC',
-      'SBI',
-      'ICICI',
+      'PAY TAX',
+      'ELECTRICITY BILL',
+      'BOOK GAS CYLINDER',
+      'RECHARGE DTH',
+      'RECHARGE MOBILE',
+      'CANCEL SUBSCRIPTIONS',
+      'BOOK TICKET',
     ];
     return SafeArea(
       child: Scaffold(
@@ -19,7 +22,7 @@ class BankAccounts extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: 80,
           centerTitle: true,
-          title: TextAppBar('BANK ACCOUNT'),
+          title: TextAppBar('REMINDERS'),
           backgroundColor: Colors.deepPurple,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(
@@ -39,10 +42,7 @@ class BankAccounts extends StatelessWidget {
                 child: Padding(
                     padding: EdgeInsets.only(left: 10, bottom: 10),
                     child: FloatingActionButton(
-                      onPressed: () {
-                        Navigator.pushNamed(
-                            context, Routes.AddingAccountScreen);
-                      },
+                      onPressed: () {},
                       child: CircleAvatar(
                         child: Icon(Icons.add),
                         backgroundColor: Colors.deepPurpleAccent,

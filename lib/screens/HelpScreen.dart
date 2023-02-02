@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../constants/textwidget_forhelpscreen.dart';
 
 class HelpScreen extends StatelessWidget {
@@ -11,6 +10,11 @@ class HelpScreen extends StatelessWidget {
     var icons = [Icons.call, Icons.attach_email_rounded, Icons.message_rounded];
     return SafeArea(
         child: Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        iconTheme: IconThemeData(color: Colors.black),
+      ),
       body: Column(
         children: [
           Stack(
