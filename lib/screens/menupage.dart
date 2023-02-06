@@ -17,7 +17,7 @@ class _MenuState extends State<Menu> {
       home: Scaffold(
         body: SafeArea(
             child: Column(
-          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
@@ -69,14 +69,15 @@ class _MenuState extends State<Menu> {
                   onTap: () {
                     Navigator.pushNamed(context, Routes.bankaccountScreen);
                   },
-                  child: Image.asset("bank.png", height: 146, width: 149),
+                  child:
+                      Image.asset("assets/bank.png", height: 146, width: 149),
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, Routes.bankaccountScreen);
                   },
-                  child:
-                      Image.asset("budgetReport.png", height: 146, width: 149),
+                  child: Image.asset("assets/budgetReport.png",
+                      height: 146, width: 149),
                 )
               ],
             ),
@@ -87,14 +88,15 @@ class _MenuState extends State<Menu> {
                   onTap: () {
                     Navigator.pushNamed(context, Routes.RemainderScreen);
                   },
-                  child: Image.asset("remainders.png", height: 146, width: 149),
+                  child: Image.asset("assets/remainders.png",
+                      height: 146, width: 149),
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, Routes.Expenses_Screen);
                   },
-                  child:
-                      Image.asset("transactions.png", height: 146, width: 149),
+                  child: Image.asset("assets/transactions.png",
+                      height: 146, width: 149),
                 )
               ],
             ),
@@ -105,13 +107,15 @@ class _MenuState extends State<Menu> {
                   onTap: () {
                     Navigator.pushNamed(context, Routes.profilepageScreen);
                   },
-                  child: Image.asset("Profile.png", height: 146, width: 149),
+                  child: Image.asset("assets/Profile.png",
+                      height: 146, width: 149),
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, Routes.helpScreen);
                   },
-                  child: Image.asset("help.png", height: 146, width: 149),
+                  child:
+                      Image.asset("assets/help.png", height: 146, width: 149),
                 )
               ],
             )

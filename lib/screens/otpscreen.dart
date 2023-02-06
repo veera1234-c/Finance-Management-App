@@ -13,68 +13,71 @@ class OtpScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 0.37,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage("otpvector1.png"),
-                  ),
-                ),
-              ),
-              Image.asset("otplogo.png"),
-              OtpTextField(
-                mainAxisAlignment: MainAxisAlignment.center,
-                numberOfFields: 6,
-                // focusedBorderColor: MyColors.ThemeColor,
-                // borderWidth: 5,
-                borderRadius: BorderRadius.circular(30),
-                fillColor: Colors.black.withOpacity(0.1),
-                filled: true,
-                fieldWidth: 60,
-                onCodeChanged: (value) => print("Changed : " + value),
-                onSubmit: (value) {
-                  print("The OTP code is " + value);
-                  Navigator.pushNamed(context, Routes.menuScreen);
-                },
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Text(
-                "PLEASE ENTER THE OTP",
-                style: TextStyle(fontFamily: "Inter", color: Color(0xFF6057A6)),
-              ),
-              Stack(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height * 0.14,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.fill,
-                        image: AssetImage("otpvector2.png"),
-                      ),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height * 0.37,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage("assets/otpvector1.png"),
                     ),
                   ),
-                  Positioned(
-                      bottom: 20,
-                      left: 10,
-                      child: Text(
-                        "DIDN’T GET? | RESEND OTP",
-                        style: TextStyle(
-                          fontFamily: "Inter",
-                          fontSize: 10,
-                          color: Colors.white,
+                ),
+                Image.asset("assets/otplogo.png"),
+                OtpTextField(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  numberOfFields: 6,
+                  // focusedBorderColor: MyColors.ThemeColor,
+                  // borderWidth: 5,
+                  borderRadius: BorderRadius.circular(30),
+                  fillColor: Colors.black.withOpacity(0.1),
+                  filled: true,
+                  fieldWidth: 60,
+                  onCodeChanged: (value) => print("Changed : " + value),
+                  onSubmit: (value) {
+                    print("The OTP code is " + value);
+                    Navigator.pushNamed(context, Routes.menuScreen);
+                  },
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  "PLEASE ENTER THE OTP",
+                  style:
+                      TextStyle(fontFamily: "Inter", color: Color(0xFF6057A6)),
+                ),
+                Stack(
+                  children: [
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: MediaQuery.of(context).size.height * 0.14,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage("assets/otpvector2.png"),
                         ),
-                      )),
-                ],
-              )
-            ],
+                      ),
+                    ),
+                    Positioned(
+                        bottom: 20,
+                        left: 10,
+                        child: Text(
+                          "DIDN’T GET? | RESEND OTP",
+                          style: TextStyle(
+                            fontFamily: "Inter",
+                            fontSize: 10,
+                            color: Colors.white,
+                          ),
+                        )),
+                  ],
+                )
+              ],
+            ),
           ),
           //     child: Stack(
           //   children: [

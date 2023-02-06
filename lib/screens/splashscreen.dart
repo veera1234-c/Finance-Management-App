@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Stack(
                     children: [
                       Image.asset(
-                        "financeGuru_logo.png",
+                        "assets/financeGuru_logo.png",
                         width: MediaQuery.of(context).size.width,
                         height: MediaQuery.of(context).size.height / 1.7,
                         fit: BoxFit.fitHeight,
