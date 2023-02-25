@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "702107243931",
+    "project_id": "finance-management-app-ec414",
+    "storage_bucket": "finance-management-app-ec414.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702107243931:android:702317919eeb30f8b67d3e",
+        "android_client_info": {
+          "package_name": "com.example.finance_management_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702107243931-4fpu8p4p3m9deb6kkbdd9pv22g7tsueh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finance_management_app",
+            "certificate_hash": "2d1e29a30e757de406bd2a326360cb90ec07cd15"
+          }
+        },
+        {
+          "client_id": "702107243931-8dphofsh7stfd7s0p5p34r9rcpok5rqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbxlxvgUSGY5VoD5bqa_rDv1lK78Jst38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702107243931-8dphofsh7stfd7s0p5p34r9rcpok5rqk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "702107243931-l10roeusnjcm72lmrt5d8i5k8h60cvh7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.financeManagementApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

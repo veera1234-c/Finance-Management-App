@@ -72,10 +72,10 @@ class _loginpageState extends State<loginpage> {
                                       width: 140,
                                       child: TextField(
                                         controller: PhoneNumberTextController,
-                                        keyboardType: TextInputType.number,
-                                        inputFormatters: <TextInputFormatter>[
-                                          FilteringTextInputFormatter.digitsOnly
-                                        ],
+                                        keyboardType: TextInputType.phone,
+                                        // inputFormatters: <TextInputFormatter>[
+                                        //   FilteringTextInputFormatter.digitsOnly
+                                        // ],
                                         decoration: InputDecoration(
                                           hintText: "Enter your number",
                                           border: InputBorder.none,
@@ -89,10 +89,6 @@ class _loginpageState extends State<loginpage> {
                   ),
                 ],
               ),
-              // child: new SvgPicture.asset(
-              //   assetName,
-              //   alignment: Alignment.topLeft,
-              // )),
             ),
             Positioned(
                 top: 30,
@@ -114,7 +110,8 @@ class _loginpageState extends State<loginpage> {
                     fixedSize:
                         Size(MediaQuery.of(context).size.width * 0.25, 50),
                   ),
-                  onPressed: () => null,
+                  onPressed: () =>
+                      Navigator.pushNamed(context, Routes.profilepageScreen),
                 )),
             Positioned(
               bottom: 108,
