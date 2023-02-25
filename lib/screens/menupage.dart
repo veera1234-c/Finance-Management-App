@@ -17,7 +17,7 @@ class _MenuState extends State<Menu> {
       home: Scaffold(
         body: SafeArea(
             child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
@@ -70,14 +70,14 @@ class _MenuState extends State<Menu> {
                     Navigator.pushNamed(context, Routes.bankaccountScreen);
                   },
                   child:
-                      Image.asset("assets/bank.png", height: 146, width: 149),
+                      Image.asset("assets/bank.png", height: 150, width: 150),
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, Routes.bankaccountScreen);
                   },
                   child: Image.asset("assets/budgetReport.png",
-                      height: 146, width: 149),
+                      height: 150, width: 150),
                 )
               ],
             ),
@@ -89,14 +89,14 @@ class _MenuState extends State<Menu> {
                     Navigator.pushNamed(context, Routes.RemainderScreen);
                   },
                   child: Image.asset("assets/remainders.png",
-                      height: 146, width: 149),
+                      height: 150, width: 150),
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, Routes.Expenses_Screen);
                   },
                   child: Image.asset("assets/transactions.png",
-                      height: 146, width: 149),
+                      height: 150, width: 150),
                 )
               ],
             ),
@@ -108,14 +108,14 @@ class _MenuState extends State<Menu> {
                     Navigator.pushNamed(context, Routes.profilepageScreen);
                   },
                   child: Image.asset("assets/Profile.png",
-                      height: 146, width: 149),
+                      height: 150, width: 150),
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, Routes.helpScreen);
                   },
                   child:
-                      Image.asset("assets/help.png", height: 146, width: 149),
+                      Image.asset("assets/help.png", height: 150, width: 150),
                 )
               ],
             )

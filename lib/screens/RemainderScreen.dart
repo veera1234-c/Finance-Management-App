@@ -71,7 +71,7 @@ class ReminderScreen extends StatelessWidget {
                   separatorBuilder: (context, index) {
                     return Divider(
                       height: 3,
-                      thickness: 5,
+                      thickness: 6,
                     );
                   },
                   itemCount: categoryname.length),

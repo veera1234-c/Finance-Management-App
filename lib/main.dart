@@ -2,8 +2,10 @@ import 'package:finance_management_app/screens/OnboardingScreens/Onboarding1.dar
 import 'package:finance_management_app/screens/bankaccounts.dart';
 import 'package:finance_management_app/screens/menupage.dart';
 import 'package:finance_management_app/screens/otpscreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'constants/routes.dart';
+import 'firebase_options.dart';
 import 'screens/AddingAccounts.dart';
 import 'screens/AddingExpenses.dart';
 import 'screens/HelpScreen.dart';
@@ -15,8 +17,15 @@ import 'screens/expensesScreen.dart';
 import 'screens/loginpage.dart';
 import 'screens/splashscreen.dart';
 
-void main() {
-  runApp(const MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -25,7 +34,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // home: OtpScreen(),
+      debugShowCheckedModeBanner: false,
+      //home: something(),
       initialRoute: Routes.splashScreen,
       routes: {
         Routes.splashScreen: (context) => SplashScreen(),
