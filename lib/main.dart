@@ -1,5 +1,6 @@
 import 'package:finance_management_app/screens/OnboardingScreens/Onboarding1.dart';
 import 'package:finance_management_app/screens/bankaccounts.dart';
+import 'package:finance_management_app/screens/budget_report.dart';
 import 'package:finance_management_app/screens/menupage.dart';
 import 'package:finance_management_app/screens/otpscreen.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
         Routes.otpScreen: (context) => OtpScreen(),
         Routes.menuScreen: (context) => Menu(),
         Routes.bankaccountScreen: (context) => BankAccounts(),
+        Routes.Report: (context) => Report(),
         Routes.AddingAccountScreen: (context) => AccountScreen(),
         Routes.RemainderScreen: (context) => ReminderScreen(),
         Routes.Expenses_Screen: (context) => ExpensesScreen(),

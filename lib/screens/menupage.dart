@@ -74,7 +74,7 @@ class _MenuState extends State<Menu> {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, Routes.bankaccountScreen);
+                    Navigator.pushNamed(context, Routes.Report);
                   },
                   child: Image.asset("assets/budgetReport.png",
                       height: 150, width: 150),

@@ -48,9 +48,7 @@ class CategoryScreen extends StatelessWidget {
                           backgroundColor:
                               MaterialStatePropertyAll(Colors.white),
                         ),
-                        onPressed: () {
-                          Navigator.pushNamed(context, Routes.helpScreen);
-                        },
+                        onPressed: () => null,
                         child: Card(
                           child: Center(child: TextList(categoryname[index])),
                           elevation: 5,
